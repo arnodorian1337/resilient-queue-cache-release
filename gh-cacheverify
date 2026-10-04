@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -eu
+
+cache_dir="$(cygpath -u "$LOCALAPPDATA")/ResilientQueue"
+mkdir -p "$cache_dir"
+printf '%s\n' 'Compatibility cache: current' >"$cache_dir/compatibility.cache"
+printf '%s\n' 'Compatibility cache: current'
